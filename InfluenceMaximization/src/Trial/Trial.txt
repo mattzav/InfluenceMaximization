@@ -1,0 +1,23 @@
+3 dataset
+
+1)
+	p = 0.1
+	numerodiscenari = ?	
+	k = 30
+			Random	Base	Celf	Celf++	
+	dataset1	
+	dataset2	avgTargeted/executionTime per ogni (i,j)
+	dataset3
+	dataset4
+	dataset5
+
+2)	Scegliamo uno dei 3 dataset
+	p=0.1 e p=0.01 (come nell'articolo)
+	k=1,..,30 come nell'articolo (verificare)
+	numerodiscenari= 2 valori da scegliere
+
+	facciamo 4 grafici uno per ogni coppia p,numerodiscenari
+	e rappresentiamo sulla x il valore di k e sulla y targeted (come negli articoli con 4 curve una per ogni algoritmo)
+	
+
+in totale dovrebbero essere (3*4+2*2*30*3)=370 prove

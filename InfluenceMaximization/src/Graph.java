@@ -35,16 +35,21 @@ public class Graph {
 
 	public Pair_Integer reachability(ArrayList<Integer> A, int node) {
 
+		
 		int count_a = 0;
 		int count_a_union_s = 0;
 		ArrayList<Integer> nodes = new ArrayList<Integer>(A);
 
 		boolean[] visited = new boolean[numberOfNodes];
 		for (int iter = 0; iter <= 1; iter++) {
-			for (int i = (nodes.size() - 1) * iter; i < nodes.size(); i++) { //alla prima iter parte da 0, alla seconda parte dall'ultimo che è stato aggiunto cioè node
+
+			for (int i = (nodes.size() - 1) * iter; i < nodes.size(); i++) { // alla prima iter parte da 0, alla seconda
+																				// parte dall'ultimo che è stato
+																				// aggiunto cioè node
 
 				if (!visited[nodes.get(i)]) {
 					for (Integer adjacent : edges[nodes.get(i)]) {
+						
 						nodes.add(adjacent);
 					}
 					visited[nodes.get(i)] = true;
